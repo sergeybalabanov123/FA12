@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.0.4\bin\i386-win32\fpc.exe" Date="1317892300"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -WG -l -vewnhibq -FiC:\Design\STMSoft\FA12test\lib\i386-win32 -FuC:\Design\STMSoft\Common -FuC:\lazarus\components\tachart\lib\i386-win32\win32 -FuC:\lazarus\components\ideintf\units\i386-win32\win32 -FuC:\lazarus\components\lazcontrols\lib\i386-win32\win32 -FuC:\lazarus\lcl\units\i386-win32\win32 -FuC:\lazarus\lcl\units\i386-win32 -FuC:\lazarus\components\lazutils\lib\i386-win32 -FuC:\lazarus\packager\units\i386-win32 -FuC:\Design\STMSoft\FA12test\ -FUC:\Design\STMSoft\FA12test\lib\i386-win32\ -FEC:\Design\STMSoft\FA12test\ -oC:\Design\STMSoft\FA12test\FA12_TEST.exe -dLCL -dLCLwin32 FA12_TEST.lpr"/>
+</CONFIG>

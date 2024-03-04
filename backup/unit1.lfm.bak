@@ -1,0 +1,409 @@
+object Form1: TForm1
+  Left = 578
+  Height = 326
+  Top = 191
+  Width = 596
+  Caption = 'DO8ac Test'
+  ClientHeight = 326
+  ClientWidth = 596
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clBlack
+  Font.Height = -16
+  Font.Name = 'Times New Roman'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '3.2.0.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 294
+    Top = 32
+    Width = 596
+    ActivePage = tsCal
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Подключение'
+      ClientHeight = 262
+      ClientWidth = 588
+      object Memo1: TMemo
+        Left = 0
+        Height = 262
+        Top = 0
+        Width = 172
+        Align = alLeft
+        Lines.Strings = (
+          'Memo1'
+        )
+        ScrollBars = ssVertical
+        TabOrder = 0
+      end
+      object Button1: TButton
+        Left = 179
+        Height = 25
+        Top = 56
+        Width = 75
+        Caption = '<-Clear'
+        TabOrder = 1
+      end
+      object CheckBox1: TCheckBox
+        Left = 176
+        Height = 23
+        Top = 32
+        Width = 53
+        Caption = 'Show'
+        TabOrder = 2
+      end
+      object cbPort: TComboBox
+        Left = 176
+        Height = 27
+        Top = 8
+        Width = 100
+        ItemHeight = 19
+        TabOrder = 3
+        Text = 'cbPort'
+        OnChange = cbPortChange
+      end
+      object sg1: TStringGrid
+        Left = 484
+        Height = 262
+        Top = 0
+        Width = 104
+        Align = alRight
+        ColCount = 3
+        DefaultColWidth = 32
+        DefaultRowHeight = 16
+        Font.Height = -13
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+        ParentFont = False
+        RowCount = 33
+        TabOrder = 4
+        Cells = (
+          2
+          1
+          0
+          'Out'
+          2
+          0
+          'IN'
+        )
+      end
+      object BitBtn5: TBitBtn
+        Left = 179
+        Height = 30
+        Top = 88
+        Width = 75
+        Caption = 'Сброс'
+        TabOrder = 5
+        Visible = False
+      end
+      object chbPriem: TCheckBox
+        Left = 199
+        Height = 23
+        Top = 168
+        Width = 75
+        Caption = 'chbPriem'
+        TabOrder = 6
+      end
+      object BitBtn7: TBitBtn
+        Left = 296
+        Height = 30
+        Top = 16
+        Width = 75
+        Caption = 'GetID'
+        TabOrder = 7
+      end
+    end
+    object tsCal: TTabSheet
+      Caption = 'Состояние каналов'
+      ClientHeight = 262
+      ClientWidth = 588
+      object Button2: TButton
+        Left = 248
+        Height = 25
+        Top = 584
+        Width = 75
+        Caption = 'Button2'
+        TabOrder = 0
+      end
+      object tb1: TProgressBar
+        Left = 0
+        Height = 20
+        Top = 0
+        Width = 588
+        Align = alTop
+        TabOrder = 1
+      end
+      object Button3: TButton
+        Left = 368
+        Height = 25
+        Top = 584
+        Width = 75
+        Caption = 'Рестарт'
+        TabOrder = 2
+      end
+      object Panel2: TPanel
+        Left = 0
+        Height = 242
+        Top = 20
+        Width = 588
+        Align = alClient
+        ClientHeight = 242
+        ClientWidth = 588
+        Color = 9816831
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 3
+        object GroupBox1: TGroupBox
+          Left = 1
+          Height = 240
+          Top = 1
+          Width = 586
+          Align = alClient
+          Caption = 'DO'
+          ClientHeight = 216
+          ClientWidth = 582
+          ParentBackground = False
+          TabOrder = 0
+          object sg6: TStringGrid
+            Left = 0
+            Height = 216
+            Top = 0
+            Width = 240
+            Align = alLeft
+            DefaultColWidth = 32
+            DefaultRowHeight = 20
+            FixedColor = 7452927
+            Font.Height = -13
+            Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+            ParentFont = False
+            RowCount = 9
+            TabOrder = 0
+            OnDrawCell = sg6DrawCell
+            ColWidths = (
+              40
+              31
+              53
+              58
+              52
+            )
+            Cells = (
+              24
+              0
+              1
+              'F1'
+              0
+              2
+              'F2'
+              0
+              3
+              'E0_5'
+              0
+              4
+              'E5'
+              0
+              5
+              'sw2'
+              0
+              6
+              'sw3'
+              0
+              7
+              'SW4'
+              0
+              8
+              'SW5'
+              1
+              0
+              'Out'
+              2
+              0
+              'I(ma)'
+              2
+              1
+              'F1ma'
+              2
+              2
+              'F2ma'
+              3
+              0
+              'U+(V)'
+              3
+              1
+              'F1V'
+              3
+              2
+              'F2V'
+              3
+              5
+              'fa2+'
+              3
+              6
+              'fa3+'
+              3
+              7
+              'FA4+'
+              3
+              8
+              'FA5+'
+              4
+              0
+              'U-(V)'
+              4
+              5
+              'fa2-'
+              4
+              6
+              'fa3-'
+              4
+              7
+              'FA4-'
+              4
+              8
+              'FA5-'
+            )
+          end
+          object Button7: TButton
+            Left = 488
+            Height = 25
+            Top = 104
+            Width = 59
+            Caption = 'Сброс'
+            TabOrder = 1
+            Visible = False
+          end
+          object cgOut: TCheckGroup
+            Left = 264
+            Height = 192
+            Top = -8
+            Width = 88
+            AutoFill = True
+            Caption = 'Out'
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.TopBottomSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 168
+            ClientWidth = 84
+            Items.Strings = (
+              'F1'
+              'F2'
+              'EN 0,5A'
+              'EN 5A'
+              'sw2'
+              'sw3'
+              'SW4'
+              'SW5'
+            )
+            OnClick = cgOutClick
+            ParentBackground = False
+            TabOrder = 2
+            Data = {
+              080000000202020202020202
+            }
+          end
+          object bOn: TButton
+            Left = 480
+            Height = 25
+            Top = 8
+            Width = 75
+            Caption = 'bOn'
+            TabOrder = 3
+            OnClick = bOnClick
+          end
+          object bOff: TButton
+            Left = 480
+            Height = 25
+            Top = 48
+            Width = 75
+            Caption = 'bOff'
+            TabOrder = 4
+            OnClick = bOffClick
+          end
+          object bApply: TButton
+            Left = 264
+            Height = 25
+            Top = 184
+            Width = 88
+            Caption = 'bApply'
+            TabOrder = 5
+            OnClick = bApplyClick
+          end
+          object Button4: TButton
+            Left = 480
+            Height = 25
+            Top = 80
+            Width = 75
+            Caption = 'Опрос'
+            TabOrder = 6
+            Visible = False
+            OnClick = Button4Click
+          end
+        end
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 32
+    Top = 0
+    Width = 596
+    Align = alTop
+    ClientHeight = 32
+    ClientWidth = 596
+    Color = clLime
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 1
+    object TrackBar1: TTrackBar
+      Left = 200
+      Height = 25
+      Top = 5
+      Width = 191
+      Frequency = 50
+      Max = 1000
+      Min = 200
+      OnChange = TrackBar1Change
+      Position = 500
+      TabOrder = 0
+    end
+    object cbReq1: TCheckBox
+      Left = 144
+      Height = 23
+      Top = 7
+      Width = 62
+      Caption = 'Опрос'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+    end
+    object Edit3: TEdit
+      Left = 392
+      Height = 27
+      Top = 3
+      Width = 64
+      TabOrder = 2
+      Text = '500 мс'
+    end
+  end
+  object Label19: TLabel
+    Left = 184
+    Height = 19
+    Top = 0
+    Width = 117
+    Caption = 'Резервные копии'
+    ParentColor = False
+  end
+  object Timer1: TTimer
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 408
+    Top = 96
+  end
+end
